@@ -57,7 +57,7 @@ function searchWord(word) {
 
         possibleWords.forEach((nextWord) => {
             const col = document.createElement("div");
-            col.classList.add("col-4", "col-md-2");
+            col.classList.add("col-6", "col-md-3", "col-lg-1-5");
 
             const card = document.createElement("div");
             card.classList.add("card", "text-center", "p-2", "shadow-sm", "position-relative");
@@ -85,7 +85,7 @@ function searchWord(word) {
 
         resultDisplay.appendChild(row);
     } else {
-        resultDisplay.innerHTML = `<div class='text-warning'>Không tìm thấy từ nối cho "${word}".</div>`;
+        resultDisplay.innerHTML = `<div class='text-dark'>Không tìm thấy từ nối cho "${word}".</div>`;
     }
 }
 

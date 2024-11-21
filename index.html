@@ -52,9 +52,11 @@
             <button class="btn btn-outline-secondary" type="button" onclick="clearInput()">✖</button>
         </div>
 
-        <!-- Nút lọc -->
+        <!-- Nút đảo chiều -->
         <div class="d-flex justify-content-center mb-3">
-            <button class="btn btn-primary" onclick="toggleSort()">Lọc từ nối (Hiển thị ít từ nối trước)</button>
+            <button class="btn btn-primary" onclick="toggleSortOrder()">
+                Đảo chiều <i id="sortIcon" class="bi bi-sort-up"></i>
+            </button>
         </div>
 
         <!-- Kết quả hiển thị -->
@@ -70,6 +72,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"></script>
     <script src="words/words.js"></script>
     <script src="script.js"></script>
 </body>
