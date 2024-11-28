@@ -10,14 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- font GG -->
-     <!-- font title -->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&display=swap" rel="stylesheet">
-   <!-- font card -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Varela+Round&display=swap" rel="stylesheet">
-   <style>
+    <!-- font title -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&display=swap"
+        rel="stylesheet">
+    <!-- font card -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <style>
         @keyframes gradient {
             0% {
                 background-position: 0% 50%;
@@ -104,22 +108,23 @@
         }
 
         .varela-round-regular {
-    font-family: "Varela Round", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+            font-family: "Varela Round", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
 
-.special-title {
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-size: 80px;
-    font-style: normal;
-    color: #ffffff;
-}
+        .special-title {
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            font-size: 80px;
+            font-style: normal;
+            color: #ffffff;
+        }
 
-.footer {
-    font-family: Arial, sans-serif; /* Giữ font mặc định */
-}
+        .footer {
+            font-family: Arial, sans-serif;
+            /* Giữ font mặc định */
+        }
 
 
 
@@ -191,7 +196,12 @@
             <button class="btn btn-outline-secondary" onclick="goBack()">Trở về</button>
             <input type="text" id="joinWord" class="form-control" placeholder="Nhập từ tìm kiếm" oninput="findWord()"
                 onkeypress="findWord(event)">
-            <button class="btn btn-outline-secondary" type="button" onclick="clearInput()">✖</button>
+                <button class="btn btn-outline-secondary" type="button" onclick="clearInput()">✖</button>
+        </div>
+        <!-- Ô nhập liệu tìm kiếm thứ 2 -->
+        <div class="input-group mb-3 mx-auto">
+            <input type="text" id="filterWord" class="form-control" placeholder="Lọc từ kết quả"
+                oninput="filterResults()">
         </div>
 
         <!-- Nút đảo chiều -->
